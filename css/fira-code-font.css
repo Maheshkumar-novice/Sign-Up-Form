@@ -1,0 +1,15 @@
+/* FiraCode Regular */
+@font-face {
+  font-family: "FiraCode";
+  src: url("../fonts/fira-code/FiraCode-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FiraCode Bold */
+@font-face {
+  font-family: "FiraCode";
+  src: url("../fonts/fira-code/FiraCode-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
