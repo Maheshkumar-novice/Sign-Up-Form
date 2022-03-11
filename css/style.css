@@ -6,6 +6,7 @@
   --gray: #808080;
   --light-gray: #d3d3d3;
   --black: #000000;
+  --invalid-color: #ff0000;
   --white-font-color: #ffffff;
   --dark-blue-bg-color: #14143b;
   --light-blue-bg-color: #0000ff1a;
@@ -141,6 +142,10 @@ input {
   padding: 5px;
 }
 
+input:required {
+  border-color: black;
+}
+
 input:focus {
   border-width: 3px;
   border-color: var(--input-focus-color);
@@ -148,8 +153,19 @@ input:focus {
   outline: none;
 }
 
-input:required {
-  border-color: black;
+input + span {
+  position: relative;
+  max-width: 400px;
+}
+
+input:required + span::after {
+  width: 100%;
+  font-size: 1.5rem;
+  position: absolute;
+  content: "*";
+  text-align: right;
+  bottom: 4rem;
+  padding-right: 2px;
 }
 
 label {
@@ -193,4 +209,14 @@ button[type="submit"]:hover {
 
 .already-have-account a {
   background-color: transparent;
+}
+
+.required-text {
+  width: 100%;
+  margin-bottom: 25px;
+  color: var(--gray);
+}
+
+.required {
+  color: var(--invalid-color);
 }
