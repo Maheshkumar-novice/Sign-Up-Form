@@ -148,6 +148,10 @@ input:focus {
   outline: none;
 }
 
+input:required {
+  border-color: black;
+}
+
 label {
   width: max-content;
   margin-bottom: 10px;
