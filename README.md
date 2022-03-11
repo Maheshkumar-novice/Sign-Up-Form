@@ -29,7 +29,7 @@ A Simple Sign-up form built with HTML & CSS with,
 * Labels for Required fields
 * Indications and Snippets for `valid` & `invalid` states depending on the `focus`
 * Flexbox
-* Lazy validation, means error message only shows when the input is not in `focus`
+* Lazy validation, means validation message only appears when the input is not in `focus` & not empty
 
 ## Demo
 Live: [Here](https://top-sign-up-form.netlify.app/)
