@@ -53,4 +53,4 @@ Live: [Here](https://top-sign-up-form.netlify.app/)
 * [The Odin Project](https://theodinproject.com)
 * [Netlify](https://netlify.com)
 
-[Move To Top](#title)
+[Move To Top](#sign-up-form)
