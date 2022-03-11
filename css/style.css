@@ -7,6 +7,7 @@
   --light-gray: #d3d3d3;
   --black: #000000;
   --invalid-color: #ff0000;
+  --valid-color: #006400;
   --white-font-color: #ffffff;
   --dark-blue-bg-color: #14143b;
   --light-blue-bg-color: #0000ff1a;
@@ -129,7 +130,7 @@ legend {
 
 fieldset div {
   width: clamp(300px, 50%, 500px);
-  margin-bottom: 35px;
+  margin-bottom: 55px;
   display: flex;
   flex-direction: column;
 }
@@ -168,6 +169,52 @@ input:required + span::after {
   padding-right: 2px;
 }
 
+input + span::before {
+  font-size: 2rem;
+  z-index: -1;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: right;
+  margin-left: 20px;
+}
+
+input:valid:not(:placeholder-shown):not(:focus) {
+  border: 2px solid var(--valid-color);
+}
+
+input:invalid:not(:placeholder-shown):not(:focus) {
+  border: 2px solid var(--invalid-color);
+}
+
+input:invalid:not(:placeholder-shown):not(:focus) + span::before {
+  content: "✖";
+  color: var(--invalid-color);
+}
+
+input:valid:not(:placeholder-shown):not(:focus) + span::before {
+  content: "✓";
+  color: var(--valid-color);
+}
+
+fieldset div {
+  position: relative;
+}
+
+p.error {
+  color: var(--invalid-color);
+  font-size: 1.5rem;
+  margin-top: 10px;
+  width: 80%;
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+input:invalid:not(:placeholder-shown):not(:focus) ~ p.error {
+  display: block;
+}
+
 label {
   width: max-content;
   margin-bottom: 10px;
@@ -184,7 +231,7 @@ button[type="submit"] {
   background-color: var(--light-blue-bg-color);
   padding: 5px;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 30px;
   border: 2px solid var(--gray);
   cursor: pointer;
   color: var(--gray);
