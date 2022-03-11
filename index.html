@@ -42,6 +42,9 @@
         <form>
           <fieldset>
             <legend>Sign Up</legend>
+            <p class="required-text">
+              Required fields are labelled with <span class="required">*</span>
+            </p>
             <div>
               <label for="first-name">First Name</label>
               <input
@@ -51,6 +54,7 @@
                 placeholder="John"
                 required
               />
+              <span class="required"></span>
             </div>
 
             <div>
@@ -62,6 +66,7 @@
                 placeholder="Doe"
                 required
               />
+              <span class="required"></span>
             </div>
 
             <div>
@@ -73,10 +78,11 @@
                 placeholder="abc@xyz.com"
                 required
               />
+              <span class="required"></span>
             </div>
 
             <div>
-              <label for="phone-number">Phone Number</label>
+              <label for="phone-number">Phone Number (Optional)</label>
               <input
                 type="tel"
                 name="phone-number"
@@ -94,6 +100,7 @@
                 placeholder="Strong@123"
                 required
               />
+              <span class="required"></span>
             </div>
 
             <div>
@@ -105,6 +112,7 @@
                 placeholder="Strong@123"
                 required
               />
+              <span class="required"></span>
             </div>
             <div>
               <button type="submit">Create Account</button>
