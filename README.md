@@ -33,6 +33,8 @@ A Simple Sign-up form built with HTML & CSS with,
 
 ## Demo
 Live: [Here](https://top-sign-up-form.netlify.app/)
+
+![demo](./images/demo.png)
   
 ## Built With
 * HTML
