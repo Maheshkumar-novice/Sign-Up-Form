@@ -17,10 +17,61 @@ body {
   font-size: 1.6rem;
   height: 100vh;
   width: 100%;
+  display: flex;
 }
 
 input,
 button {
   font-family: inherit;
   font-size: 100%;
+}
+
+.sidebar {
+  width: 35%;
+  position: relative;
+}
+
+.logo {
+  margin-top: 100px;
+}
+
+.logo-title {
+  text-align: center;
+}
+
+.credits {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-wrapper {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+fieldset {
+  flex: 1;
+  border: none;
+}
+
+button[type="submit"] {
+  width: calc(150px + 1rem);
 }
